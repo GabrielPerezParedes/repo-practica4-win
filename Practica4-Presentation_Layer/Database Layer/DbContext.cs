@@ -20,9 +20,9 @@ namespace Database_Layer
             // Patron Repository
             StudentTable = new List<Student>()
             {
-                new Student(){ Id = "Group-001", Name = "Frank Sinatra", AvailableSlots = 5},
-                new Student(){ Id = "Group-002", Name = "Omar Banos", AvailableSlots = 4},
-                new Student(){ Id = "Group-003", Name = "George Kusonoki", AvailableSlots = 7}
+                new Student(){ Id = "Group-001", Name = "Gabriel Perez", AvailableSlots = 8},
+                new Student(){ Id = "Group-002", Name = "David Abrego", AvailableSlots = 2},
+                new Student(){ Id = "Group-003", Name = "Sebastian Prieto", AvailableSlots = 11}
             };
         }
 

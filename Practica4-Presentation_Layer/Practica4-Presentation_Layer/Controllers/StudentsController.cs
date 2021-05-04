@@ -20,11 +20,11 @@ namespace Practica4_Presentation_Layer.Controllers
             _studentManager = studentManager;
         }
 
-        // This Method Create a User
-        [HttpPost]
-        public List<Student> CreatePerson([FromBody] Student studentName) 
+        // This Method Get a User
+        [HttpGet]
+        public List<Student> GetStudents()
         {
-            return _studentManager.CreatePerson(studentName);
+            return _studentManager.GetAllStudents();
         }
 
         // This Method Update a User
@@ -34,19 +34,18 @@ namespace Practica4_Presentation_Layer.Controllers
             return _studentManager.UpdateStudent(student);
         }
 
+        // This Method Create a User
+        [HttpPost]
+        public List<Student> CreatePerson([FromBody] Student studentName) 
+        {
+            return _studentManager.CreatePerson(studentName);
+        }
+
         // This Method Delete a User
         [HttpDelete]
         public Student DeletePerson([FromBody] Student student) 
         {
             return _studentManager.DeletePerson(student);
         }
-
-        // This Method Get a User
-        [HttpGet]
-        public List<Student> GetStudents()
-        {
-            return _studentManager.GetAllStudents();
-        }
-
     }
 }
